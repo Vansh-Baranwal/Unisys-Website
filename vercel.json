@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "codered26.vercel.app" }], "destination": "https://www.codered26.xyz/:path*", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/schedule", "destination": "/#timeline", "permanent": true }
+  ]
+}

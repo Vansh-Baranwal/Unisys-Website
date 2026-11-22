@@ -1,0 +1,98 @@
+import React from 'react';
+import './sponsors.css';
+
+const DotArrowIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 24" fill="none">
+    <circle cx="1.51169" cy="12.0732" r="1.35934" fill="currentColor" />
+    <circle cx="4.79294" cy="12.0742" r="1.35934" fill="currentColor" />
+    <circle cx="8.07223" cy="12.0757" r="1.35934" fill="currentColor" />
+    <circle cx="11.3496" cy="12.0791" r="1.35934" fill="currentColor" />
+    <circle cx="14.6308" cy="12.0805" r="1.35934" fill="currentColor" />
+    <circle cx="17.9043" cy="12.0761" r="1.35934" fill="currentColor" />
+    <circle cx="21.1855" cy="12.0771" r="1.35934" fill="currentColor" />
+    <circle cx="17.9121" cy="15.2519" r="1.35934" fill="currentColor" />
+    <circle cx="1.35934" cy="1.35934" r="1.35934" transform="matrix(1 0 0 -1 16.5469 10.2627)" fill="currentColor" />
+    <circle cx="14.625" cy="18.4936" r="1.35934" fill="currentColor" />
+    <circle cx="1.35934" cy="1.35934" r="1.35934" transform="matrix(1 0 0 -1 13.2637 7.01562)" fill="currentColor" />
+    <circle cx="11.3515" cy="21.8232" r="1.35934" fill="currentColor" />
+    <circle cx="1.35934" cy="1.35934" r="1.35934" transform="matrix(1 0 0 -1 9.98633 3.68701)" fill="currentColor" />
+  </svg>
+);
+
+const SponsorCard = ({ href, name, logoSrc, logoIconSrc, logoClass, wordmark, isComingSoon }) => {
+  const isLink = Boolean(href);
+  const Tag = isLink ? 'a' : 'div';
+  const linkProps = isLink ? { href, target: "_blank", rel: "noopener noreferrer" } : {};
+
+  return (
+    <Tag {...linkProps} className={`sponsors-grid__item${isComingSoon ? ' is-coming-soon' : ''}`} data-sponsor-item="">
+      <div className="sponsors-top">
+        <span className="sponsors-eyebrow">{name || 'Coming Soon'}</span>
+        <span className="sponsors-brackets">
+          <span data-sponsor-el="left">[</span>
+          <span data-sponsor-el="arrow">{isComingSoon ? "—" : "\u2197"}</span>
+          <span data-sponsor-el="right">]</span>
+        </span>
+      </div>
+      {isComingSoon ? (
+        <div className="sponsors-coming-soon">
+          <span>Coming Soon</span>
+        </div>
+      ) : (
+        <div className={`sponsors-logo ${logoClass}`}>
+          {logoIconSrc && <img className="sponsors-logo-mark" src={logoIconSrc} alt="" aria-hidden="true" loading="lazy" fetchPriority="low" decoding="async" />}
+          <img src={logoSrc} alt={wordmark ? '' : name} loading="lazy" fetchPriority="low" decoding="async" />
+          {wordmark && <span className="sponsors-logo-wordmark">{name}</span>}
+        </div>
+      )}
+    </Tag>
+  );
+};
+
+export default function SponsorsSection() {
+  return (
+    <section id="sponsors" className="sponsors-section">
+      <div className="sponsors-container">
+        <div className="sponsors-header">
+          <h2 className="sponsors-title">Partners</h2>
+        </div>
+        <div className="sponsors-bento">
+          <div className="sponsors-grid-top sponsors-grid-companies sponsors-grid-two">
+            <SponsorCard href="https://niveussolutions.com.au/" name="Niveus Solutions" logoSrc="/sponsors/niveus-solutions.png" logoClass="is-niveus-solutions" />
+            <SponsorCard href="https://www.simpleenergy.in/" name="Simple Energy" logoSrc="/sponsors/simple-energy.png" logoClass="is-simple-energy" />
+          </div>
+          <div className="sponsors-grid-top sponsors-grid-companies sponsors-grid-three">
+            <SponsorCard href="https://agnes-ai.com/" name="Agnes AI" logoIconSrc="/sponsors/agnes-ai-icon.png" logoSrc="/sponsors/agnes-ai-wordmark.png" logoClass="is-agnes-ai" />
+            <SponsorCard href="https://www.unisys.com/" name="Unisys" logoSrc="/sponsors/unisys3.png" logoClass="is-unisys" />
+            <SponsorCard href="https://cassettelabs.in/" name="Cassette Labs" logoSrc="/sponsors/cassette-labs.png" logoClass="is-cassette-labs" />
+          </div>
+          <div className="sponsors-grid-top sponsors-grid-companies sponsors-grid-three">
+            <SponsorCard href="https://thinkrobotics.com/" name="Think Robotics" logoSrc="/sponsors/think-robotics.png" logoClass="is-think-robotics" />
+            <SponsorCard href="https://sahasranshu.com/" name="Sahasranshu Technologies" logoSrc="/sponsors/sahasranshu-technologies.png" logoClass="is-sahasranshu" wordmark />
+            <SponsorCard href="https://xprobotics.ai/" name="XP Robotics" logoSrc="/sponsors/xp-robotics.png" logoClass="is-xp-robotics" />
+          </div>
+          <div className="sponsors-grid-top sponsors-grid-companies sponsors-grid-three">
+            <SponsorCard href="https://www.mystartupwave.com/" name="MyStartupWave" logoSrc="/sponsors/mystartupwave.png" logoClass="is-mystartupwave" />
+            <SponsorCard href="https://aigrants.in/" name="AI Grants India" logoSrc="/sponsors/aigi.png" logoClass="is-aigi" />
+            <SponsorCard href="https://www.linkedin.com/company/heapify-global-community/home/" name="Heapify" logoSrc="/sponsors/heapify3.png" logoClass="is-heapify" />
+          </div>
+          <div className="sponsors-grid-bottom sponsors-grid-four">
+            <SponsorCard href="https://unstop.com/" name="Unstop" logoSrc="/sponsors/unstop.svg" logoClass="is-unstop" />
+            <SponsorCard href="https://gen.xyz/" name=".xyz" logoSrc="/sponsors/xyz-logo-white.svg" logoClass="is-xyz" />
+            <SponsorCard href="https://fueler.io/" name="Fueler" logoSrc="/sponsors/fueler.svg" logoClass="is-fueler" />
+            <SponsorCard href="https://givemycertificate.com/" name="Give My Certificate" logoSrc="/sponsors/give-my-certificate-icon.png" logoClass="is-give-my-certificate" wordmark />
+          </div>
+        </div>
+        <a className="sponsors-button" data-arrow-button="" href="https://drive.google.com/file/d/1R868KjV0qfIvK2croIpPDb5R0J6qH9JY/view" target="_blank" rel="noopener noreferrer">
+          <div className="button-icon__wrap is--duplicate"><div className="button-icon"><DotArrowIcon /></div></div>
+          <div className="button-text__wrap">
+            <div className="text-wrap__innner">
+              <span>Become a partner</span>
+            </div>
+          </div>
+          <div className="button-icon__wrap is--main"><div className="button-icon"><DotArrowIcon /></div></div>
+        </a>
+      </div>
+    </section>
+  );
+}
