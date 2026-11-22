@@ -1,5 +1,5 @@
 {
-  "name": "codered26",
+  "name": "unisys-codered26",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -27,4 +27,3 @@
     "vite": "^8.3.0"
   }
 }
-  
