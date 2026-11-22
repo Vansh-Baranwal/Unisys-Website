@@ -26,21 +26,6 @@ export default function TrackProblemsPage({ track, onNavigate }) {
   const cards = isStartupRoot ? startupTracks : problems
   return <div className="track-detail ps-index">
     <div className="ps-container">
-      <div className="ps-breadcrumb">
-        <a className="td-back" href="/tracks" onClick={follow('tracks')}><span aria-hidden="true">←</span> All tracks</a>
-        {startupParent && <><span className="ps-breadcrumb-separator" aria-hidden="true">/</span><a className="ps-parent-link" href={startupParent.problemsPath} onClick={follow(startupParent.problemsPage)}>{startupParent.title}</a></>}
-      </div>
-      {!startupParent && <nav className="ps-track-nav" aria-label="Choose a track">
-        {tracks.map((item, index) => <a key={item.slug} href={item.problemsPath} onClick={follow(item.problemsPage)} aria-label={`Track ${index + 1}: ${item.title}`} aria-current={item.slug === activeMainSlug ? 'page' : undefined} title={item.title}>
-          <span className="ps-track-nav-name">{item.title}</span>
-          <span className="ps-track-nav-number" aria-hidden="true">{item.numeral}</span>
-        </a>)}
-      </nav>}
-      {startupSiblings.length > 0 && <nav className="ps-track-nav ps-startup-nav" aria-label="Choose a startup track">
-        {startupSiblings.map(item => <a key={item.slug} href={item.problemsPath} onClick={follow(item.problemsPage)} aria-current={item.slug === track.slug ? 'page' : undefined}>
-          <span className="ps-track-nav-name">{item.title}</span>
-        </a>)}
-      </nav>}
       <header className="ps-header">
         <div className="ps-heading-copy"><p className="ps-category">{startupParent ? startupParent.title : `Track ${track.numeral}`} / {track.category}</p><h1>{track.title}</h1></div>
         <p className="ps-track-summary">{track.summary}</p>
