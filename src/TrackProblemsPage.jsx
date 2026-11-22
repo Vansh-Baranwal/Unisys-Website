@@ -27,8 +27,7 @@ export default function TrackProblemsPage({ track, onNavigate }) {
   return <div className="track-detail ps-index">
     <div className="ps-container">
       <header className="ps-header">
-        <div className="ps-heading-copy"><p className="ps-category">{startupParent ? startupParent.title : `Track ${track.numeral}`} / {track.category}</p><h1>{track.title}</h1></div>
-        <p className="ps-track-summary">{track.summary}</p>
+        <div className="ps-heading-copy"><h1>{track.title}</h1></div>
       </header>
       <section aria-labelledby="ps-heading" className="ps-selection">
         <h2 id="ps-heading" className="sr-only">{selectionTitle}</h2>
