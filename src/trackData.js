@@ -17,7 +17,7 @@ function createTrackBase({ title, slug, page, numeral, ...details }) {
 }
 
 const unisys = createUnisysTrack({
-  ...createTrackBase({ title: 'Unisys', slug: 'track-5', page: 'tracks/track-5', numeral: '05', briefOwner: 'unisys' }),
+  ...createTrackBase({ title: 'Codered 26 × unisys', slug: 'track-5', page: 'tracks/track-5', numeral: '05', briefOwner: 'unisys' }),
   selectionNotice: 'Participants who choose this problem statement will be required to sign a non-disclosure agreement (NDA). Unisys will own all intellectual property rights to the project, and participants may not pursue or continue the project after the event.',
 })
 

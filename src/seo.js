@@ -2,9 +2,9 @@ import { trackRoutes } from './trackData.js'
 
 export const siteUrl = 'https://www.codered26.xyz'
 const trackPageTitle = ({ kind, track, brief }) => {
-  if (kind === 'brief') return `${brief.fullTitle || brief.title} — ${track.title} ${track.briefKind === 'open-challenge' ? 'Open Challenge' : `PS ${brief.problemNumber}`} | Code Red 2026`
-  if (kind === 'problems') return `${track.title} — ${track.subtracks?.length ? 'Company Tracks' : track.briefKind === 'open-challenge' ? 'Open Challenge' : 'Challenges'} | Code Red 2026`
-  return `${track.title} — ${track.startupParent ? 'Startup Track' : `Track ${track.numeral}`} | Code Red 2026`
+  if (kind === 'brief') return `${brief.fullTitle || brief.title} — ${track.title} PS ${brief.problemNumber}`
+  if (kind === 'problems') return `${track.title}`
+  return `${track.title}`
 }
 export const pages = {
   ...Object.fromEntries(trackRoutes.map(route => [route.page, {
@@ -13,9 +13,9 @@ export const pages = {
     description: (route.brief || route.track).summary,
     isMock: (route.brief || route.track).isMock,
   }])),
-  home: { path: '/', title: 'Unisys — Challenges | Code Red 2026', description: 'Explore ten Unisys challenges in enterprise software, quantum computing, AI, sustainability and digital health.' },
+  home: { path: '/', title: 'Codered 26 × unisys', description: 'Explore ten Unisys challenges in enterprise software, quantum computing, AI, sustainability and digital health.' },
   about: { path: '/about', title: 'About Code Red 2026 | BMSIT&M Product Sprint', description: 'Discover Code Red 2026 at BMSIT&M, Bengaluru: a national student product development sprint, online selection rounds and a 24-hour offline finale.' },
-  tracks: { path: '/tracks', title: 'Unisys — Challenges | Code Red 2026', description: 'Explore ten Unisys challenges in enterprise software, quantum computing, AI, sustainability and digital health.' },
+  tracks: { path: '/tracks', title: 'Codered 26 × unisys', description: 'Explore ten Unisys challenges in enterprise software, quantum computing, AI, sustainability and digital health.' },
   prizes: { path: '/prizes', title: '₹2,25,000+ Prize Pool | Code Red 2026', description: 'See prizes and awards for Code Red 2026, the national 24-hour product development sprint at BMSIT&M, Bengaluru, with a total ₹2,25,000+ prize pool.' },
   schedule: { path: '/schedule', title: 'Schedule & Timeline | Code Red 2026', description: 'See the Code Red 2026 schedule, from registration and online evaluation rounds to the 24-hour grand finale at BMSIT&M, Bengaluru.' },
   'previous-editions': { path: '/previous-editions', title: 'Previous Editions | Code Red 2026', description: 'Explore moments from previous Code Red editions: student teams building projects, presenting to judges and celebrating at BMSIT&M, Bengaluru.' },
