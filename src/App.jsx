@@ -199,7 +199,6 @@ function PageContent({ initialPage, initialTeamPage }) {
 
   return <>
     <div ref={appRef} className={`app-page app-page--${selectedTrack ? 'track-detail' : currentPage}`}>
-            <Navbar activePage={selectedTrack ? 'tracks' : currentPage} onNavigate={navigatePage} />
       <main id="main">
         {currentPage !== 'home' && currentPage !== 'team' && currentPage !== 'notFound' && !selectedTrack && <h1 className="sr-only">{pages[currentPage].title}</h1>}
         {currentPage === 'notFound' && <NotFoundPage onNavigate={navigatePage} />}

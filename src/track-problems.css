@@ -2,7 +2,7 @@
 .track-detail.ps-index {
   --td-paper: #ddd9d2;
   --td-footer-gap: clamp(96px, 10vw, 160px);
-  padding-top: 112px;
+  padding-top: 56px;
   -webkit-font-smoothing: antialiased;
   font-synthesis: none;
 }
