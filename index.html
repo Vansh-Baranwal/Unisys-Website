@@ -7,8 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#101010" />
     <script id="preloader-route-policy">
-        window.shouldPlayPagePreloader = () => false;
-        document.documentElement.dataset.preloader = 'skip';
+        window.shouldPlayPagePreloader = (page, fromPage) => {
+            const normalize = (page) => {
+                const value = String(page || '');
+                const path = (value.startsWith('#/') ? value.slice(2) : value).split(/[?#]/)[0];
+                return path.replace(/^\/+|\/+$/g, '') || 'home';
+            };
+            const route = normalize(page);
+            const returningToTracks = (route === 'tracks' || route === 'tracks/track-5/problems') && normalize(fromPage).startsWith('tracks/');
+            return !returningToTracks && ['home', 'about', 'tracks', 'tracks/track-5/problems', 'prizes', 'schedule', 'previous-editions', 'partners', 'faq', 'team'].includes(route);
+        };
+        const initialPreloaderPage = window.location.hash.startsWith('#/')
+            ? window.location.hash.slice(2)
+            : window.location.pathname;
+        document.documentElement.dataset.preloader = window.shouldPlayPagePreloader(initialPreloaderPage) ? 'play' : 'skip';
     </script>
     <style>
         @font-face {
