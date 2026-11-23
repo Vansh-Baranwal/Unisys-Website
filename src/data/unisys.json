@@ -1,6 +1,246 @@
 [
   {
     "number": 1,
+    "sourceNumber": 1,
+    "company": "Unisys",
+    "title": "AI-Driven Legacy Application Modernization",
+    "fullTitle": "AI-Driven Legacy Application Modernization",
+    "asOf": "2026-11-19",
+    "source": {
+      "filename": "BMSIT_CodeRed26_Problem_Statements_12.docx",
+      "href": "/briefs/unisys/BMSIT_CodeRed26_Problem_Statements_12.docx",
+      "format": "docx",
+      "sha256": "8665a8b2cbd2bd531001d7f1ab1f3b5d7a97c61acd510b54460bf10afb7a758f"
+    },
+    "paragraphs": [
+      {
+        "text": "Problem Statement 1: AI-Driven Legacy Application Modernization",
+        "index": 34
+      },
+      {
+        "text": "Problem Description",
+        "index": 35
+      },
+      {
+        "text": "Challenge: Reimagine Legacy Modernization with AI",
+        "index": 36
+      },
+      {
+        "text": "Design and develop an innovative, scalable, and technically robust solution to modernize legacy applications written in languages such as COBOL, and FORTRAN into modern programming languages like Java and Go.",
+        "index": 37
+      },
+      {
+        "text": "The solution should demonstrate an end-to-end modernization approach, going beyond basic code translation to preserve application functionality, business logic, and system behavior.",
+        "index": 38
+      },
+      {
+        "text": "Key Expectations",
+        "index": 39
+      },
+      {
+        "text": "Participants are encouraged to explore innovative approaches, including Generative AI, agentic AI, and automated engineering techniques, to address:",
+        "index": 40
+      },
+      {
+        "text": "Code Discovery & Analysis: Analyze legacy source code, identify dependencies, and extract business rules.",
+        "index": 41
+      },
+      {
+        "text": "Automated Code Migration: Transform legacy applications into functionally equivalent Java or Go implementations.",
+        "index": 42
+      },
+      {
+        "text": "Dependency Modernization: Identify and migrate relevant database interactions, interfaces, and external dependencies.",
+        "index": 43
+      },
+      {
+        "text": "Automated Testing & Validation: Generate and execute tests to verify functional equivalence between legacy and modernized applications.",
+        "index": 44
+      },
+      {
+        "text": "Build & Deployment: Automate compilation, integration, and deployment of the modernized application.",
+        "index": 45
+      },
+      {
+        "text": "Traceability: Maintain traceability between legacy code, generated code, business rules, and test results.",
+        "index": 46
+      },
+      {
+        "text": "Problem Domain",
+        "index": 47
+      },
+      {
+        "text": "Legacy Modernization with AI",
+        "index": 48
+      },
+      {
+        "text": "Recommended Emerging Technology to be Used in the Solution",
+        "index": 49
+      },
+      {
+        "text": "All forms of AI, Classical, Agentic, GenAI",
+        "index": 50
+      },
+      {
+        "text": "Expected Deliverables",
+        "index": 51
+      },
+      {
+        "text": "A working proof of concept demonstrating an end-to-end modernization pipeline, from legacy source-code analysis to the deployment and validation of a modernized application.",
+        "index": 52
+      },
+      {
+        "text": "Participants may focus on a representative subset of a legacy application, but their solution should demonstrate how the approach could scale to larger enterprise applications.",
+        "index": 53
+      },
+      {
+        "text": "Evaluation Criteria",
+        "index": 54
+      },
+      {
+        "text": "Innovation: Creative application of AI and automation.",
+        "index": 55
+      },
+      {
+        "text": "Technical Soundness: Architecture, accuracy, and reliability.",
+        "index": 56
+      },
+      {
+        "text": "Functional Equivalence: Preservation of business logic and application behavior.",
+        "index": 57
+      },
+      {
+        "text": "Automation: Minimal manual intervention across the migration lifecycle.",
+        "index": 58
+      },
+      {
+        "text": "Scalability & Reusability: Ability to support different legacy languages and application architectures.",
+        "index": 59
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "sourceNumber": 2,
+    "company": "Unisys",
+    "title": "AI-Powered Coding Assistant for Legacy Programming Languages",
+    "fullTitle": "AI-Powered Coding Assistant for Legacy Programming Languages",
+    "asOf": "2026-11-19",
+    "source": {
+      "filename": "BMSIT_CodeRed26_Problem_Statements_12.docx",
+      "href": "/briefs/unisys/BMSIT_CodeRed26_Problem_Statements_12.docx",
+      "format": "docx",
+      "sha256": "8665a8b2cbd2bd531001d7f1ab1f3b5d7a97c61acd510b54460bf10afb7a758f"
+    },
+    "paragraphs": [
+      {
+        "text": "Problem Statement 2: AI-Powered Coding Assistant for Legacy Programming Languages",
+        "index": 60
+      },
+      {
+        "text": "Problem Description",
+        "index": 61
+      },
+      {
+        "text": "Challenge: Bring the Modern AI Coding Experience to Legacy Languages!",
+        "index": 62
+      },
+      {
+        "text": "Modern developers benefit from AI-powered coding assistants such as GitHub Copilot, OpenAI Codex, and Claude Code. However, developers working with legacy languages such as COBOL, and FORTRAN often lack a comparable AI-assisted development experience.",
+        "index": 63
+      },
+      {
+        "text": "Your challenge is to design and build an intelligent coding assistant that brings modern AI-powered development capabilities to legacy programming languages.",
+        "index": 64
+      },
+      {
+        "text": "Key Expectations",
+        "index": 65
+      },
+      {
+        "text": "Participants should develop an innovative, technically robust solution that supports:",
+        "index": 66
+      },
+      {
+        "text": "AI Code Assistance: Generate, modify, refactor, and explain legacy code using natural-language instructions.",
+        "index": 67
+      },
+      {
+        "text": "Context-Aware Understanding: Analyze existing codebases, dependencies, data structures, and business logic to provide relevant suggestions.",
+        "index": 68
+      },
+      {
+        "text": "Inline Code Editing: Enable developers to make changes directly within their existing code, similar to modern AI coding assistants.",
+        "index": 69
+      },
+      {
+        "text": "Conversational Development: Allow developers to interact with their codebase through natural-language prompts.",
+        "index": 70
+      },
+      {
+        "text": "Automated Testing: Generate test cases and validate proposed code changes while preserving existing business logic.",
+        "index": 71
+      },
+      {
+        "text": "Developer Experience: Provide a modern, intuitive interface through an IDE extension, CLI, or web-based development environment.",
+        "index": 72
+      },
+      {
+        "text": "Code Safety: Present proposed changes as reviewable diffs and allow developers to approve or reject modifications.",
+        "index": 73
+      },
+      {
+        "text": "Problem Domain",
+        "index": 74
+      },
+      {
+        "text": "AI-Powered Coding Assistant for Legacy Programming Languages",
+        "index": 75
+      },
+      {
+        "text": "Expected Deliverables",
+        "index": 76
+      },
+      {
+        "text": "A working AI-powered coding assistant demonstrating capabilities such as code understanding, generation, inline editing, and testing for at least one legacy programming language.",
+        "index": 77
+      },
+      {
+        "text": "The solution should demonstrate how the architecture can be extended to support additional legacy languages.",
+        "index": 78
+      },
+      {
+        "text": "Evaluation Criteria",
+        "index": 79
+      },
+      {
+        "text": "Innovation: Creative application of Generative AI and agentic AI.",
+        "index": 80
+      },
+      {
+        "text": "Developer Experience: How closely the experience resembles modern AI coding tools.",
+        "index": 81
+      },
+      {
+        "text": "Technical Accuracy: Ability to generate syntactically correct code while preserving business logic.",
+        "index": 82
+      },
+      {
+        "text": "Context Awareness: Understanding of existing code, dependencies, and application structure.",
+        "index": 83
+      },
+      {
+        "text": "Extensibility: Ability to support multiple legacy programming languages.",
+        "index": 84
+      },
+      {
+        "text": "Practical Usability: Demonstration of real-world developer workflows.",
+        "index": 85
+      }
+    ]
+  },
+  {
+    "number": 3,
     "sourceNumber": 3,
     "company": "Unisys",
     "title": "Intelligent Knowledge Graph Visualization",
@@ -124,7 +364,7 @@
     ]
   },
   {
-    "number": 2,
+    "number": 4,
     "sourceNumber": 4,
     "company": "Unisys",
     "title": "Next-Generation Interactive Code Visualization Platform",
@@ -284,7 +524,7 @@
     ]
   },
   {
-    "number": 3,
+    "number": 5,
     "sourceNumber": 5,
     "company": "Unisys",
     "title": "Quantum-Readiness Network Map",
@@ -388,7 +628,7 @@
     ]
   },
   {
-    "number": 4,
+    "number": 6,
     "sourceNumber": 6,
     "company": "Unisys",
     "title": "GrammaForge: Grammar guided synthetic data Engine for proprietary Languages",
@@ -492,7 +732,7 @@
     ]
   },
   {
-    "number": 5,
+    "number": 7,
     "sourceNumber": 7,
     "company": "Unisys",
     "title": "BenchForge: Building a Contamination-Resistant Benchmark for Proprietary-Language Code Models",
@@ -596,7 +836,7 @@
     ]
   },
   {
-    "number": 6,
+    "number": 8,
     "sourceNumber": 8,
     "company": "Unisys",
     "title": "Use Shor's Algorithm to break Weak Cryptographic Algorithms",
@@ -664,7 +904,7 @@
     ]
   },
   {
-    "number": 7,
+    "number": 9,
     "sourceNumber": 9,
     "company": "Unisys",
     "title": "Credit Card Fraud detection using Quantum Machine Learning",
@@ -732,7 +972,7 @@
     ]
   },
   {
-    "number": 8,
+    "number": 10,
     "sourceNumber": 10,
     "company": "Unisys",
     "title": "Adaptive AI-Powered Training Plan Generator",
@@ -804,7 +1044,7 @@
     ]
   },
   {
-    "number": 9,
+    "number": 11,
     "sourceNumber": 11,
     "company": "Unisys",
     "title": "Sustainable Smart Campus Operations",
@@ -892,7 +1132,7 @@
     ]
   },
   {
-    "number": 10,
+    "number": 12,
     "sourceNumber": 12,
     "company": "Unisys",
     "title": "MindMom AI: Early Detection of Postpartum Depression Using Multimodal AI Screening",

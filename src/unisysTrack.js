@@ -2,6 +2,20 @@ import sources from './data/unisys.json' with { type: 'json' }
 
 const previews = [
   {
+    category: 'Legacy modernization & agentic software engineering',
+    subtitle: 'Modernize COBOL and FORTRAN into maintainable Java or Go.',
+    summary: 'Build an AI-powered end-to-end modernization pipeline that analyzes legacy code, migrates business logic to Java or Go, modernizes dependencies, and verifies functional equivalence.',
+    topics: ['COBOL & FORTRAN', 'Code discovery', 'Automated migration', 'Dependency mapping', 'Equivalence testing', 'Traceability'],
+    questions: ['Which business rules are defined in this COBOL program?', 'Can we transform this FORTRAN routine into idiomatic Go?', 'How are database calls and file systems mapped to Java?', 'Does the modernized implementation pass functional equivalence tests?', 'Where is this business rule implemented in the generated code?', 'Can the build and deployment pipeline run automatically?'],
+  },
+  {
+    category: 'Developer tooling & legacy language AI',
+    subtitle: 'Bring modern Copilot-style AI assistant capabilities to COBOL and FORTRAN.',
+    summary: 'Develop a context-aware coding assistant that provides inline suggestions, natural-language explanation, automated refactoring, and test generation for legacy codebases.',
+    topics: ['Legacy assistants', 'Context awareness', 'Inline code editing', 'Natural language', 'Safe diff reviews', 'Automated test generation'],
+    questions: ['Can you explain what this legacy COBOL perform loop does?', 'Generate a unit test verifying this calculation logic.', 'Refactor this FORTRAN subroutine with inline safety diffs.', 'Which data divisions and copybooks are relevant to this function?', 'Suggest modern error handling for this legacy routine.', 'Can I run this assistant inside VS Code or via CLI?'],
+  },
+  {
     category: 'Knowledge graphs & enterprise applications',
     subtitle: 'Explore complex relationships without writing graph queries.',
     summary: 'Build an AI-assisted Neo4j visualization platform with natural-language exploration, multiple abstraction levels and upstream/downstream impact analysis.',
@@ -81,8 +95,8 @@ export function createUnisysTrack(base) {
     ...base,
     category: 'Enterprise software, quantum computing & AI',
     subtitle: 'Industry challenges',
-    summary: 'Explore ten Unisys challenges in enterprise software, quantum computing, AI, sustainability and digital health.',
-    cardDescription: 'Choose from 10 problem statements in AI-powered software, quantum computing, smart campuses and digital health.',
+    summary: 'Explore twelve Unisys challenges in enterprise software, legacy modernization, quantum computing, AI, sustainability and digital health.',
+    cardDescription: 'Choose from 12 problem statements in AI-powered software, legacy modernization, developer tooling, quantum computing, smart campuses and digital health.',
     isMock: false,
     hasOfficialBriefs: true,
     heroMode: 'diagram',

@@ -1,6 +1,152 @@
 [
   {
     "number": 1,
+    "sourceNumber": 1,
+    "title": "AI-Driven Legacy Application Modernization",
+    "fullTitle": "AI-Driven Legacy Application Modernization",
+    "problem": "Legacy applications running in COBOL or FORTRAN contain mission-critical business logic but are difficult to maintain and scale. Design and develop an innovative, scalable, end-to-end modernization pipeline using Generative AI, agentic workflows, and automated engineering techniques to transform legacy codebases into modern Java or Go implementations while strictly preserving functionality, business logic, and system behavior.",
+    "audience": "Enterprise architects, systems engineers, and modernization teams looking to migrate legacy monoliths to modern cloud-native architectures.",
+    "outcome": "Deliver a reliable, automated end-to-end pipeline that discovers business rules, migrates code and dependencies, generates equivalence tests, and automates deployment with complete traceability.",
+    "required": [
+      {
+        "title": "Code discovery & analysis",
+        "text": "Analyze legacy COBOL/FORTRAN source code, identify modular dependencies, and extract core business rules."
+      },
+      {
+        "title": "Automated code migration",
+        "text": "Transform legacy logic into idiomatic, functionally equivalent Java or Go implementations with high code quality."
+      },
+      {
+        "title": "Dependency modernization",
+        "text": "Identify and migrate database interactions, interfaces, file systems, and external service dependencies."
+      },
+      {
+        "title": "Automated testing & validation",
+        "text": "Generate and execute test suites to verify complete functional equivalence between legacy and modernized code."
+      },
+      {
+        "title": "Build & deployment automation",
+        "text": "Automate compilation, containerization, integration, and deployment of the modernized application."
+      },
+      {
+        "title": "Traceability & auditability",
+        "text": "Maintain bi-directional traceability between original legacy code, generated modern code, extracted business rules, and test results."
+      }
+    ],
+    "optional": [],
+    "workflow": "Ingest legacy COBOL/FORTRAN source → run code discovery & rule extraction → generate modern Java/Go implementation → migrate database & interface calls → run automated equivalence test harness → containerize and verify build/deployment pipeline.",
+    "deliverables": [
+      {
+        "title": "End-to-end modernization proof of concept",
+        "text": "A working pipeline demonstrating automated analysis, translation, testing, and deployment on a representative legacy codebase, showing scalability to enterprise systems."
+      }
+    ],
+    "success": [
+      {
+        "title": "Functional equivalence — 30%",
+        "text": "Preservation of business logic, edge-case calculations, and application behavior."
+      },
+      {
+        "title": "Innovation & AI automation — 25%",
+        "text": "Creative application of GenAI and agentic AI to minimize manual intervention across migration."
+      },
+      {
+        "title": "Technical soundness — 20%",
+        "text": "Clean architecture, reliability, test coverage, and deployment automation."
+      },
+      {
+        "title": "Scalability & reusability — 15%",
+        "text": "Ability to handle diverse legacy languages, large codebases, and varied architectures."
+      },
+      {
+        "title": "Traceability — 10%",
+        "text": "Clear mapping from legacy code to generated code, rules, and test verification."
+      }
+    ],
+    "constraints": [],
+    "scope": [
+      {
+        "title": "Legacy modernization scope",
+        "text": "Solutions may demonstrate on representative legacy programs (e.g. COBOL or FORTRAN), but must exhibit architectural patterns suitable for enterprise scale."
+      }
+    ],
+    "resources": []
+  },
+  {
+    "number": 2,
+    "sourceNumber": 2,
+    "title": "AI-Powered Coding Assistant for Legacy Programming Languages",
+    "fullTitle": "AI-Powered Coding Assistant for Legacy Programming Languages",
+    "problem": "While developers working in modern ecosystems enjoy tools like GitHub Copilot and Claude Code, engineers maintaining legacy systems in COBOL and FORTRAN lack AI-assisted productivity tooling. Build an intelligent, context-aware coding assistant that brings modern inline editing, natural-language code explanation, automated refactoring, and test generation to legacy programming languages.",
+    "audience": "Software engineers and mainframe maintainers working with legacy programming languages who need modern developer tooling.",
+    "outcome": "Empower legacy software developers with interactive AI assistance, context-aware code completion, safe diff-reviewed inline edits, and conversational code understanding.",
+    "required": [
+      {
+        "title": "AI code assistance & generation",
+        "text": "Generate, explain, refactor, and update legacy COBOL/FORTRAN code using natural-language instructions."
+      },
+      {
+        "title": "Context-aware code understanding",
+        "text": "Parse and comprehend project-wide codebases, copybooks, data divisions, and business logic to generate precise suggestions."
+      },
+      {
+        "title": "Inline code editing & diff review",
+        "text": "Allow developers to trigger inline transformations and review proposed edits as safe diffs before accepting or rejecting."
+      },
+      {
+        "title": "Conversational codebase exploration",
+        "text": "Provide interactive chat allowing developers to query system logic, debug legacy routines, and plan modifications."
+      },
+      {
+        "title": "Automated legacy test generation",
+        "text": "Generate legacy test fixtures and validation suites to confirm modified code retains intended business behavior."
+      },
+      {
+        "title": "Modern developer experience",
+        "text": "Deliver an intuitive workflow through an IDE extension (e.g. VS Code), a rich CLI, or a web development environment."
+      }
+    ],
+    "optional": [],
+    "workflow": "Open legacy codebase in IDE/CLI → index syntax, copybooks, and data structures → prompt assistant for explanations or edits → inspect proposed changes in visual diff view → run generated tests → accept verified modifications.",
+    "deliverables": [
+      {
+        "title": "Working AI assistant prototype",
+        "text": "Demonstrate a functional coding assistant supporting code understanding, generation, inline editing, and test creation for at least one legacy language, designed for multi-language extensibility."
+      }
+    ],
+    "success": [
+      {
+        "title": "Developer experience — 25%",
+        "text": "Ergonomics, interface responsiveness, and similarity to premier modern AI coding assistants."
+      },
+      {
+        "title": "Technical accuracy — 25%",
+        "text": "Syntactic correctness of legacy code generation and preservation of business logic."
+      },
+      {
+        "title": "Context awareness — 20%",
+        "text": "Effective understanding of dependencies, file structures, and variable definitions."
+      },
+      {
+        "title": "Innovation & AI application — 15%",
+        "text": "Smart prompting, agentic validation, and safe refactoring pipelines."
+      },
+      {
+        "title": "Extensibility & usability — 15%",
+        "text": "Architecture allowing support for additional legacy languages and practical developer workflows."
+      }
+    ],
+    "constraints": [],
+    "scope": [
+      {
+        "title": "Language focus and extensibility",
+        "text": "The prototype must support at least one legacy language (such as COBOL or FORTRAN) and provide a clear pattern for adding others."
+      }
+    ],
+    "resources": []
+  },
+  {
+    "number": 3,
     "sourceNumber": 3,
     "title": "Intelligent Knowledge Graph Visualization",
     "fullTitle": "Intelligent Knowledge Graph Visualization",
@@ -81,7 +227,7 @@
     "resources": []
   },
   {
-    "number": 2,
+    "number": 4,
     "sourceNumber": 4,
     "title": "Next-Generation Interactive Code Visualization Platform",
     "fullTitle": "Next-Generation Interactive Code Visualization Platform",
@@ -174,7 +320,7 @@
     "resources": []
   },
   {
-    "number": 3,
+    "number": 5,
     "sourceNumber": 5,
     "title": "Quantum-Readiness Network Map",
     "fullTitle": "Quantum-Readiness Network Map",
@@ -253,7 +399,7 @@
     ]
   },
   {
-    "number": 4,
+    "number": 6,
     "sourceNumber": 6,
     "title": "GrammaForge: Grammar guided synthetic data Engine for proprietary Languages",
     "fullTitle": "GrammaForge: Grammar guided synthetic data Engine for proprietary Languages",
@@ -340,7 +486,7 @@
     "resources": []
   },
   {
-    "number": 5,
+    "number": 7,
     "sourceNumber": 7,
     "title": "BenchForge: Building a Contamination-Resistant Benchmark for Proprietary-Language Code Models",
     "fullTitle": "BenchForge: Building a Contamination-Resistant Benchmark for Proprietary-Language Code Models",
@@ -443,7 +589,7 @@
     "resources": []
   },
   {
-    "number": 6,
+    "number": 8,
     "sourceNumber": 8,
     "problem": "Demonstrate how quantum computing can compromise classical public-key cryptography by implementing Shor’s Algorithm to factor small composite numbers and crack a scaled-down RSA encryption system.",
     "audience": "Participants exploring quantum computing, cryptography and security through a small RSA demonstration.",
@@ -504,7 +650,7 @@
     ]
   },
   {
-    "number": 7,
+    "number": 9,
     "sourceNumber": 9,
     "problem": "Apply Quantum Machine Learning (QML) and quantum optimization to identify subtle, non-linear transaction anomalies in high-dimensional, heavily imbalanced financial datasets. The brief describes financial-fraud datasets as typically having millions of rows and fewer than 0.2% fraudulent cases; practical approaches therefore use hybrid quantum-classical architectures.",
     "audience": "People building credit-card fraud detection and transaction-anomaly detection systems.",
@@ -584,7 +730,7 @@
     ]
   },
   {
-    "number": 8,
+    "number": 10,
     "sourceNumber": 10,
     "problem": "Develop an AI-powered system that creates a self-paced training plan for novice engineers from learning materials spread across PDFs, Word documents, presentations, OneNote pages, videos, transcripts and sample programs. The underlying system is complex, its training material has accumulated over decades without proper structure, and much of it is duplicated. Engineers receive different amounts of learning time depending on their team’s workload and need to become productive quickly.",
     "audience": "Novice engineers learning a complex system from large, unstructured and duplicated collections of training material.",
@@ -633,7 +779,7 @@
     "resources": []
   },
   {
-    "number": 9,
+    "number": 11,
     "sourceNumber": 11,
     "problem": "Design an intelligent Smart Campus Operations System that analyzes campus occupancy, timetable schedules, equipment utilization, weather conditions and simulated or actual electricity consumption. Identify energy wastage and recommend actions that reduce consumption without negatively affecting students or faculty. The emphasis is on predicting, recommending and optimizing campus operations, rather than monitoring energy alone. An illustrative recommendation in the brief describes a computer lab staying powered for 2.5 hours after scheduled use, with a shutdown adjustment estimated to reduce weekly energy consumption by 12%; those figures are an example, not mandatory targets.",
     "audience": "Campus operations teams, with student and faculty experience protected while energy use is improved.",
@@ -722,7 +868,7 @@
     ]
   },
   {
-    "number": 10,
+    "number": 12,
     "sourceNumber": 12,
     "problem": "Build an AI system that continuously and privately screens new mothers for early signs of postpartum depression (PPD). The brief describes limited screening visits, stigma, scarce doctors and counselors in rural and low-resource areas, and symptoms emerging between visits in sleep, mood, voice and behavior. Combine questionnaire answers with text or voice check-ins and optional wearable signals. Flag at-risk mothers to a clinician or counselor in time, and never replace clinical diagnosis.",
     "audience": "New mothers and the clinicians or counselors who review risk, including people in rural and low-resource settings.",
